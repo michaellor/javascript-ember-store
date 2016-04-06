@@ -1,3 +1,6 @@
 {{product-detail product=model}}
 <br>
 {{feedback-form saveFeedback="saveFeedback" product=model}}
+{{#each model.feedback as |feedback|}}
+  {{feedback-tile feedback=feedback}}
+{{/each}}
