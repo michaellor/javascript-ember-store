@@ -1,5 +1,5 @@
 {
-  "product": [{
+  "products": [{
     "title": "ninja turtle water bottle",
     "cost": 3.00,
     "description": "A plastic water bottle for your kids."
@@ -29,7 +29,7 @@
     "description": "It's Magic."
   }],
 
-  "feedback": [{
+  "feedbacks": [{
     "user": "frugalParent23",
     "comment": "I like this product.",
     "rating": 5

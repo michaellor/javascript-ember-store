@@ -1,1 +1,5 @@
-{{outlet}}
+{{#each model.products as |product|}}
+  <ul>
+    {{product-tile product=product}}
+  </ul>
+{{/each}}
