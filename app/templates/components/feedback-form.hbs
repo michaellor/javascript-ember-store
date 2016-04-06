@@ -1,1 +1,31 @@
-{{yield}}
+{{#if addFeedback}}
+<h4>Add Feedback</h4>
+<div>
+  <form>
+    <div>
+      <label for="user">User:</label>
+      {{input value=user id="user"}}
+    </div>
+    <br>
+    <div>
+      <label for="comment">Comment:</label>
+      {{input value=comment id="comment"}}
+    </div>
+    <br>
+    <div>
+      <label for="rating">Rating:</label>
+      <select id="rating" {{action 'selectRating' on='change'}}>
+        <option value=1>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <br>
+    <button {{action "saveFeedback"}}>Add</button>
+  </form>
+</div>
+{{else}}
+  <button {{action "showFeedbackForm"}}>Leave comment</button>
+{{/if}}

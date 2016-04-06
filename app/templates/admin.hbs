@@ -1,1 +1,11 @@
-{{outlet}}
+<h1>Admin page</h1>
+<div class="container">
+  {{#each model.products as |product|}}
+    <ul>
+      {{admin-product-tile product=product}}
+      <button {{action 'deleteProduct' product}}>Delete</button>
+    </ul>
+  {{/each}}
+
+  {{add-product saveNewProduct="saveNewProduct"}}
+</div>
