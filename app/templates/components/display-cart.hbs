@@ -1,3 +1,5 @@
 {{#each shoppingCart.products as |product|}}
-  <li>{{product.title}} - ${{product.cost}}</li>
+  <li>{{product.title}}</li>
 {{/each}}
+
+<button {{action 'costSum' product.cost}}>Find Total Cost</button>

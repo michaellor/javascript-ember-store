@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export function cartSum(params/*, hash*/) {
+  
   return params;
 }
 
