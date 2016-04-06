@@ -7,14 +7,8 @@ export default Ember.Component.extend({
     var cartTotal = 0;
     var shoppingCart = this.get('shoppingCart');
     for(var i = 0; i < shoppingCart.products.length; i++) {
-      console.log((shoppingCart.get('products')));
       cartTotal += (shoppingCart.get('products'))[i].get('cost');
-
     }
     return cartTotal;
   }),
-
-  actions: {
-
-  }
 });

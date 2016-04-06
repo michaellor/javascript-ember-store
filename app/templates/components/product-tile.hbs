@@ -1,3 +1,5 @@
-<li>{{#link-to 'product' product.id}}{{product.title}}{{/link-to}} - {{format-currency product.cost}}</li>
+<div>
+  <li>{{#link-to 'product' product.id}}{{product.title}}{{/link-to}} - {{format-currency product.cost}}</li>
 
-<button {{action 'addToCart' product}}>Add to Cart</button>
+  <button {{action 'addToCart' product}}>Add to Cart</button>
+</div>

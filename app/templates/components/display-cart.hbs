@@ -1,7 +1,8 @@
-{{#each shoppingCart.products as |product|}}
-  <li>{{product.title}}</li>
-{{/each}}
-
-{{totalCost}}
-
-<button {{action 'costSum' product.cost}}>Find Total Cost</button>
+<div class="cart-div">
+  <h3>Shopping Cart</h3>
+  {{#each shoppingCart.products as |product|}}
+    <li>{{product.title}}: {{format-currency product.cost}}</li>
+  {{/each}}
+  <hr>
+  <p><strong>Total: {{format-currency totalCost}}</strong></p>
+</div>
