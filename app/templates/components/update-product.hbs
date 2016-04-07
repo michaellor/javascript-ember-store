@@ -1,1 +1,12 @@
-{{yield}}
+<div>
+  <form>
+    <label for="title">Title</label>
+    {{input value=title id="title"}}
+    <label for="description">Description</label>
+    {{input value=description id="description"}}
+    <label for="cost">Price</label>
+    {{input type=number value=cost id="cost"}}
+
+    <button {{action 'updateProduct' product}}>Submit</button>
+  </form>
+</div>

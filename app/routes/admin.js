@@ -11,8 +11,22 @@ export default Ember.Route.extend({
   actions: {
     deleteProduct(product) {
       if (confirm("Delete product?")){
-        product.destroyRecord();
+        var product_delete = product.get('feedback').map(function(feedback) {
+          return feedback.destroyRecord();
+        });
+        Ember.RSVP.all(product_delete).then(function() {
+          return product.destroyRecord();
+        });
       }
+    },
+
+    updateProduct(product, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !== undefined) {
+          product.set(key, params[key]);
+        }
+      });
+      product.save();
     },
 
     saveNewProduct(params) {
