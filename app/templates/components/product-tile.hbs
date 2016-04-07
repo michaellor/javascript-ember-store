@@ -1,5 +1,5 @@
 <div>
   <li>{{#link-to 'product' product.id}}{{product.title}}{{/link-to}} - {{format-currency product.cost}}</li>
 
-  <button {{action 'addToCart' product}}>Add to Cart</button>
+  <button class="btn btn-success" {{action 'addToCart' product}}>Add to Cart</button>
 </div>

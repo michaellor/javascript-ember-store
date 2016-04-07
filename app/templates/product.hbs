@@ -1,8 +1,11 @@
-{{product-detail product=model}}
-<br>
-{{feedback-form saveFeedback="saveFeedback" product=model}}
-{{#each model.feedback as |feedback|}}
-  {{feedback-tile feedback=feedback}}
-{{/each}}
+<div class="container">
+  {{product-detail product=model}}
+  <br>
+  {{feedback-form saveFeedback="saveFeedback" product=model}}
+  {{#each model.feedback as |feedback|}}
+    {{feedback-tile feedback=feedback}}
+  {{/each}}
 
-{{rating-display product=model}}
+  {{rating-display product=model}}
+
+</div>

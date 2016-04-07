@@ -4,7 +4,7 @@
     <ul>
       {{admin-product-tile product=product}}
       {{update-product product=product updateProduct="updateProduct"}}
-      <button {{action 'deleteProduct' product}}>Delete</button>
+      <button class="btn btn-danger" {{action 'deleteProduct' product}}>Delete</button>
     </ul>
   {{/each}}
 

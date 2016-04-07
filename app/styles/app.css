@@ -1,13 +1,29 @@
 .cart-div {
-  background-color: grey;
+  background-color: black;
   padding: 20px;
   width: 250px;
   border-radius: 10px;
 }
 .hero{
-  background: url() no-repeat;
+  background: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/Hi-Tech-Wallpaper-41.jpg) no-repeat;
   background-size:cover;
   background-attachment: fixed;
-  height: 650px;
-  width: 100%;
+  height: 150px;
+  width: 80%;
+}
+
+body {
+  background-image: url(http://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300373/12927553-Dark-blue-technology-background-Stock-Photo-technical.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: sans-serif;
+}
+
+header {
+  margin-left: 140px;
+}
+
+.form-color {
+  color: black;
 }

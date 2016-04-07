@@ -17,9 +17,9 @@
       {{input value=cost id="cost"}}
     </div>
 
-    <button {{action 'saveNewProduct'}}>Add New Product</button>
+    <button class="btn btn-success" {{action 'saveNewProduct'}}>Add New Product</button>
   </form>
 </div>
 {{else}}
-  <button {{action "showNewProductForm"}}>Add New Product</button>
+  <button class="btn btn-primary" {{action "showNewProductForm"}}>Add New Product</button>
 {{/if}}

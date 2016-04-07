@@ -4,12 +4,12 @@
   <form>
     <div>
       <label for="user">User:</label>
-      {{input value=user id="user"}}
+      {{input value=user id="user" class="form-color"}}
     </div>
     <br>
     <div>
       <label for="comment">Comment:</label>
-      {{input value=comment id="comment"}}
+      {{input value=comment id="comment" class="form-color"}}
     </div>
     <br>
     <div>
@@ -23,9 +23,9 @@
       </select>
     </div>
     <br>
-    <button {{action "saveFeedback"}}>Add</button>
+    <button class="btn btn-success" {{action "saveFeedback"}}>Add</button>
   </form>
 </div>
 {{else}}
-  <button {{action "showFeedbackForm"}}>Leave comment</button>
+  <button class="btn btn-success" {{action "showFeedbackForm"}}>Leave comment</button>
 {{/if}}
