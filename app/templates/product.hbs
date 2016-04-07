@@ -5,10 +5,13 @@
   {{feedback-tile feedback=feedback}}
 {{/each}}
 
-{{#each model.feedback as |feedback|}}
+{{rating-display product=model}}
+
+<!-- {{#each model.feedback as |feedback|}}
 {{log feedback}}
 {{rating-display feedback=feedback}}
-{{/each}}
-{{rating-display feedback=model.feedback}}
+{{/each}} -->
+
+
 <!-- {{totalRating}} -->
 <!-- {{rating-display feedback=model}} -->
